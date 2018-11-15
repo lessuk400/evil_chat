@@ -5,8 +5,12 @@
     "@rails/webpacker": "^3.2.0",
     "actioncable": "^5.2.1",
     "coffeescript": "1.12.7",
+    "emojionearea": "^3.4.1",
+    "jquery": "^3.3.1",
+    "jquery-textcomplete": "^1.8.4",
     "normalize.css": "^7.0.0",
-    "postcss-nested": "^4.1.0"
+    "postcss-nested": "^4.1.0",
+    "rails-ujs": "^5.2.1"
   },
   "scripts": {
     "lint-staged": "$(yarn bin)/lint-staged"

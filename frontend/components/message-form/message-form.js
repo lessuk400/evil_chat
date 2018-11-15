@@ -15,7 +15,7 @@ function submitMessage(input) {
 const form = document.querySelector(".js-message-form");
 
 if (form) {
-  const input = form.querySelector(".js-message-form--input");
+  const input  = form.querySelector(".js-message-form--input");
   const submit = form.querySelector(".js-message-form--submit");
 
   // You can send a message with cmd/ctrl+enter
@@ -23,12 +23,16 @@ if (form) {
     if (event.keyCode === 13 && event.metaKey) {
       event.preventDefault();
       submitMessage(input);
+      
+      $('.emojionearea-editor').empty();
     }
   });
 
-  // Or by cicking a button
+  // Or by clicking a button
   submit.addEventListener("click", event => {
     event.preventDefault();
     submitMessage(input);
+
+    $('.emojionearea-editor').empty();
   });
 }
